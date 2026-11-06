@@ -307,3 +307,8 @@ html.angebot-vorbei .preis-alt{text-decoration:none;opacity:1;margin:0;font-weig
 .ueber-bilder .foto{position:relative}
 .ueber-bilder .b1 .ki-hinweis{right:50%;transform:translateX(50%);bottom:18px;white-space:nowrap}
 .ueber-bilder .ki-hinweis{right:10px;bottom:10px;font-size:11px;padding:0 10px}
+
+/* KI-Hinweis dezent */
+.ki-hinweis,.ueber-bilder .ki-hinweis,.ueber-bilder .b1 .ki-hinweis{right:10px;left:auto;bottom:10px;top:auto;transform:none;min-height:24px;padding:0 9px;gap:4px;font-size:11px;font-weight:500;letter-spacing:.2px;background:rgba(251,248,244,.78);color:#2A2422;-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
+.ki-hinweis:hover,.ueber-bilder .ki-hinweis:hover{background:#FBF8F4;color:#2A2422}
+.ki-hinweis .i{width:11px;height:11px;color:#7A5B43}
