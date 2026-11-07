@@ -331,3 +331,6 @@ html.angebot-vorbei .preis-alt{text-decoration:none;opacity:1;margin:0;font-weig
 
 /* Über mich mit nur einem Bild */
 .ueber-bilder.ein-bild{grid-template-columns:1fr;max-width:440px}
+
+/* Mein Studio nur mit Studiofoto */
+.studio-bilder.ein-bild{grid-template-columns:1fr}
