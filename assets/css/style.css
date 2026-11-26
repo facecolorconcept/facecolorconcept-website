@@ -334,3 +334,56 @@ html.angebot-vorbei .preis-alt{text-decoration:none;opacity:1;margin:0;font-weig
 
 /* Mein Studio nur mit Studiofoto */
 .studio-bilder.ein-bild{grid-template-columns:1fr}
+
+/* Models gesucht: Laufband oben */
+.modelband{background:linear-gradient(90deg,#1C1817,#3A2E27 50%,#1C1817);color:var(--gold-hell);border-bottom:1px solid rgba(176,138,94,.45);overflow:hidden;font-size:14px;font-weight:600}
+.modelband a{display:block;text-decoration:none;color:inherit;padding:10px 0;min-height:24px}
+.mb-lauf{display:flex;width:max-content;animation:lauf 38s linear infinite}
+.mb-lauf>span{display:inline-flex;align-items:center;white-space:nowrap}
+.mb-lauf b{font-family:var(--serif);font-style:italic;font-weight:400;font-size:16px;color:#fff;letter-spacing:.01em}
+.mb-lauf u{text-decoration:none;color:var(--dunkel);background:var(--gold-hell);border-radius:999px;padding:2px 12px}
+.mb-stern{color:var(--gold);padding:0 22px}
+.modelband a:hover .mb-lauf,.modelband a:focus-visible .mb-lauf{animation-play-state:paused}
+.modelband a:hover u{background:#fff}
+
+/* Models gesucht: Bereich auf der Startseite */
+.model{padding-top:0}
+.model-karte{position:relative;display:grid;grid-template-columns:1.5fr 1fr;align-items:center;gap:40px;padding:64px;border-radius:var(--radius);overflow:hidden;box-shadow:0 24px 60px rgba(38,33,32,.22)}
+.model-karte::before{content:"";position:absolute;inset:14px;border:1px solid rgba(176,138,94,.55);border-radius:calc(var(--radius) - 10px);pointer-events:none}
+.model-karte .dachzeile{color:var(--gold-hell)}
+.model-karte h2{color:#fff}
+.model-karte h2 em{color:var(--gold-hell)}
+.model-karte .unterzeile{color:var(--nude);font-size:19px;margin:18px 0 22px}
+.model-leistungen{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;padding:0;margin:0 0 28px;list-style:none;max-width:520px}
+.model-leistungen li{display:flex;align-items:center;gap:12px;padding:12px 16px;border-radius:16px;background:rgba(233,211,180,.1);border:1px solid rgba(233,211,180,.25);font-weight:700;color:#fff}
+.model-leistungen .i{color:var(--gold-hell);flex:none}
+.model-zwischen{font-family:var(--sans);font-size:15px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gold-hell);margin-bottom:12px}
+.model-bedingungen{padding:0;margin:0 0 32px;list-style:none;display:grid;gap:8px;color:var(--nude)}
+.model-bedingungen li{display:flex;align-items:center;gap:10px}
+.model-bedingungen .i{color:var(--gold);flex:none}
+.model-rand{border-color:rgba(233,211,180,.6);color:var(--gold-hell)}
+.model-rand:hover{background:var(--gold-hell);color:var(--dunkel)}
+.model-karte .knopf-hell:hover{background:#fff}
+.model-klein{font-size:14px;color:rgba(242,230,211,.8);margin:16px 0 0}
+.model-siegel{position:relative;justify-self:center;width:min(100%,300px);aspect-ratio:1;border-radius:50%;display:grid;place-items:center;background:rgba(28,24,23,.55);border:1px solid rgba(176,138,94,.5)}
+.model-siegel svg{position:absolute;inset:0;width:100%;height:100%}
+.model-siegel img{width:42%;height:auto}
+.buchen a.buchen-model{border-color:var(--gold);background:rgba(176,138,94,.16)}
+@media (max-width:980px){
+  .model-karte{grid-template-columns:1fr;padding:44px 32px}
+  .model-siegel{grid-row:1;width:170px}
+}
+@media (max-width:640px){
+  .model-karte{padding:36px 22px}
+  .model-karte::before{inset:8px}
+  .model-leistungen{grid-template-columns:1fr 1fr}
+  .model-leistungen li{padding:10px 12px;font-size:15px}
+  .model-siegel{width:140px}
+  .mb-lauf b{font-size:15px}
+}
+@media (prefers-reduced-motion:reduce){
+  .mb-lauf{animation:none;width:auto;justify-content:center}
+  .mb-lauf>span:nth-child(2){display:none}
+  .modelband a{padding:10px 16px;overflow:hidden}
+}
+#model{scroll-margin-top:96px}
