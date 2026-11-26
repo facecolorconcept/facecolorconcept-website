@@ -387,3 +387,14 @@ html.angebot-vorbei .preis-alt{text-decoration:none;opacity:1;margin:0;font-weig
   .modelband a{padding:10px 16px;overflow:hidden}
 }
 #model{scroll-margin-top:96px}
+
+/* Google-Bewertung */
+.sterne{width:120px;height:24px;fill:var(--gold);flex:none}
+.bewerten{display:flex;flex-wrap:wrap;align-items:center;gap:18px 28px;margin-top:48px;padding:26px 30px;border-radius:24px;border:1px solid var(--gold);background:rgba(176,138,94,.12)}
+.bewerten>div{flex:1 1 260px}
+.bewerten h3{font-size:28px;color:#fff}
+.bewerten p{margin:6px 0 0;color:var(--nude);font-size:16px}
+.bewerten .knopf-hell:hover{background:#fff}
+.bewertung-seite .bew-logo{width:120px;height:120px;border-radius:50%;margin:0 auto 22px;box-shadow:0 0 0 2px var(--gold)}
+.sterne-gross{width:200px;height:40px;display:block;margin:0 auto 18px}
+.bew-klein{margin-top:18px;font-size:14px;color:var(--text-2)}
